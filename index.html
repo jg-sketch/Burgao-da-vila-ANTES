@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Burgão da Vila</title>
+    <title>Comercial Boa Compra</title>
 
     <style>
 
@@ -15,48 +15,55 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background: #eeeeee;
+            color: #222222;
         }
+
 
         /* CABEÇALHO */
 
         header {
-            height: 40px;
-            background: #000000;
+            background: #174d38;
+            height: 65px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 0 30px;
+
             color: white;
-            text-align: center;
-            position: relative;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 16px;
-            padding-top: 2px;
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
         }
 
-        header p {
-            margin: 0;
-            font-size: 10px;
-            color: #1689ff;
+        .endereco {
+            margin-left: 30px;
+            font-size: 12px;
+            color: #dddddd;
         }
 
         .menu {
-            position: absolute;
-            left: 5px;
-            top: 7px;
+            margin-left: auto;
 
-            background: white;
-            color: black;
+            background: #ffffff;
+            color: #174d38;
 
             border: none;
+
+            padding: 8px 12px;
+
             font-size: 18px;
         }
 
 
-        /* CONTEÚDO */
+        /* ÁREA PRINCIPAL */
 
         .container {
-            width: 90%;
-            max-width: 1200px;
+            width: 88%;
+            max-width: 1150px;
+
             margin: auto;
         }
 
@@ -64,92 +71,111 @@
         /* BANNER */
 
         .banner {
-            height: 330px;
-            margin-top: 8px;
+            margin-top: 15px;
 
-            background-color: #000000;
+            height: 230px;
 
-            border-radius: 12px;
+            background: #d8c79c;
 
-            overflow: hidden;
-
-            position: relative;
-        }
-
-        .banner img {
-            width: 100%;
-            height: 100%;
-
-            object-fit: cover;
-        }
-
-        .banner-text {
-            position: absolute;
-
-            left: 35px;
-            top: 100px;
-
-            color: white;
-        }
-
-        .banner-text h2 {
-            font-size: 40px;
-            margin: 0;
-            color: #ffcc00;
-        }
-
-        .banner-text p {
-            font-size: 22px;
-            margin: 5px 0;
-        }
-
-
-        /* MENU */
-
-        .categorias {
-            margin-top: 17px;
-
-            height: 34px;
-
-            background: #72000b;
+            border: 1px solid #c0b083;
 
             display: flex;
 
             align-items: center;
+
+            justify-content: space-between;
+
+            padding: 0 45px;
         }
 
-        .categorias a {
+        .banner-text {
+            width: 50%;
+        }
+
+        .banner-text h1 {
+            font-size: 34px;
+            margin: 0 0 10px 0;
+
+            color: #174d38;
+        }
+
+        .banner-text p {
+            font-size: 16px;
+
+            color: #444444;
+        }
+
+        .banner-button {
+            background: #e47722;
+
+            border: none;
+
             color: white;
+
+            padding: 10px 18px;
+
+            font-weight: bold;
+        }
+
+        .banner-produtos {
+            font-size: 75px;
+        }
+
+
+        /* MENU DE CATEGORIAS */
+
+        .menu-categorias {
+
+            background: white;
+
+            border: 1px solid #cccccc;
+
+            margin-top: 15px;
+
+            padding: 0;
+
+            display: flex;
+
+            overflow: hidden;
+        }
+
+        .menu-categorias a {
 
             text-decoration: none;
 
-            font-size: 12px;
+            color: #333333;
 
-            font-weight: bold;
+            padding: 14px 18px;
 
-            padding: 10px 18px;
+            font-size: 13px;
+
+            border-right: 1px solid #dddddd;
         }
 
-        .categorias a:hover {
-            background: #ffed00;
-            color: black;
+        .menu-categorias a:hover {
+
+            background: #e47722;
+
+            color: white;
         }
 
 
         /* BUSCA */
 
-        .busca-area {
+        .barra-superior {
+
             display: flex;
 
-            margin-top: 13px;
+            margin-top: 12px;
 
-            gap: 20px;
+            gap: 10px;
         }
 
         .busca {
-            width: 75%;
 
-            height: 44px;
+            flex: 1;
+
+            height: 40px;
 
             background: white;
 
@@ -159,99 +185,75 @@
         }
 
         .busca input {
-            width: 100%;
+
+            flex: 1;
 
             border: none;
 
             padding-left: 12px;
 
-            font-size: 17px;
+            font-size: 14px;
 
             outline: none;
         }
 
         .busca button {
+
             width: 50px;
 
-            background: #72000b;
+            background: #174d38;
 
             color: white;
 
             border: none;
-
-            font-size: 18px;
         }
 
 
-        /* CARRINHO */
+        .cliente {
 
-        .carrinho {
-            width: 25%;
+            background: white;
 
-            height: 44px;
+            border: 1px solid #cccccc;
 
-            background: #72000b;
+            padding: 11px 18px;
 
-            display: flex;
+            font-size: 13px;
 
-            justify-content: center;
-
-            align-items: center;
-
-            gap: 10px;
+            color: #174d38;
         }
 
-        .carrinho button {
-            border: none;
 
-            padding: 10px;
+        /* TÍTULO */
+
+        .titulo {
+
+            background: #174d38;
 
             color: white;
 
-            font-weight: bold;
-        }
+            padding: 9px 12px;
 
-        .botao-carrinho {
-            background: #087ef5;
-        }
-
-        .fechar-pedido {
-            background: #0a9f54;
-        }
-
-
-        /* TÍTULO DAS CATEGORIAS */
-
-        .titulo-categoria {
-            background: #c5c5c5;
-
-            height: 34px;
-
-            margin-top: 7px;
-
-            padding-left: 7px;
-
-            display: flex;
-
-            align-items: center;
-
-            font-weight: bold;
+            margin-top: 15px;
 
             font-size: 15px;
+
+            font-weight: bold;
         }
 
 
         /* PRODUTOS */
 
-        .produtos {
+        .lista {
+
+            background: #dddddd;
+
+            padding: 10px;
 
             display: grid;
 
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
 
             gap: 10px;
-
-            margin-top: 5px;
         }
 
 
@@ -259,53 +261,54 @@
 
             background: white;
 
-            min-height: 125px;
+            min-height: 180px;
 
-            border-radius: 12px;
-
-            padding: 15px;
+            border: 1px solid #cccccc;
 
             position: relative;
 
-            box-shadow: 0px 2px 5px #cccccc;
+            padding: 12px;
+
         }
 
 
         .produto h3 {
 
-            margin: 0;
+            font-size: 14px;
 
-            font-size: 15px;
+            margin: 0 0 8px 0;
 
-            padding-right: 110px;
-        }
-
-
-        .produto p {
-
-            font-size: 13px;
-
-            width: 70%;
-
-            margin-top: 15px;
+            color: #174d38;
         }
 
 
         .produto-imagem {
 
-            position: absolute;
+            width: 100%;
 
-            right: 10px;
+            height: 65px;
 
-            top: 15px;
+            background: #f1f1f1;
 
-            width: 100px;
+            display: flex;
 
-            height: 75px;
+            align-items: center;
 
-            text-align: center;
+            justify-content: center;
 
-            font-size: 55px;
+            font-size: 42px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .produto p {
+
+            font-size: 12px;
+
+            color: #555555;
+
+            line-height: 16px;
         }
 
 
@@ -313,86 +316,166 @@
 
             position: absolute;
 
-            bottom: 15px;
+            left: 12px;
 
-            left: 15px;
+            bottom: 12px;
 
             font-weight: bold;
 
-            font-size: 15px;
+            font-size: 14px;
+
+            color: #222222;
         }
 
 
-        .produto button {
+        .comprar {
 
             position: absolute;
 
-            right: 15px;
+            right: 12px;
 
-            bottom: 10px;
+            bottom: 9px;
 
-            background: #e82e40;
+            background: #e47722;
 
             color: white;
 
             border: none;
 
-            border-radius: 3px;
+            padding: 7px 10px;
 
-            padding: 8px 12px;
+            font-size: 11px;
+        }
+
+
+        /* AVISO */
+
+        .aviso {
+
+            background: #f7f0d0;
+
+            border: 1px solid #d9c984;
+
+            margin-top: 15px;
+
+            padding: 12px;
+
+            font-size: 12px;
+
+            color: #555555;
+        }
+
+
+        /* RODAPÉ */
+
+        footer {
+
+            margin-top: 30px;
+
+            background: #174d38;
+
+            color: white;
+
+            padding: 25px;
+
+            text-align: center;
 
             font-size: 12px;
         }
 
 
-        /* CARRINHO FIXO */
+        /* CARRINHO */
 
-        .carrinho-fixo {
+        .carrinho {
 
             position: fixed;
 
             bottom: 0;
 
-            left: 0;
+            right: 20px;
 
-            width: 100%;
-
-            height: 40px;
-
-            background: #72000b;
-
-            display: flex;
-
-            justify-content: center;
-
-            align-items: center;
-
-            gap: 10px;
-        }
-
-        .carrinho-fixo button {
-
-            border: none;
-
-            padding: 8px 20px;
+            background: #174d38;
 
             color: white;
 
-            font-weight: bold;
+            padding: 12px 20px;
+
+            border-radius: 4px 4px 0 0;
+
+            font-size: 13px;
         }
 
-        .valor {
 
-            background: #087ef5;
+        /* RESPONSIVIDADE BÁSICA */
+
+        @media (max-width: 900px) {
+
+            .lista {
+
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+
+            .menu-categorias {
+
+                overflow-x: auto;
+
+            }
 
         }
 
-        .finalizar {
 
-            background: #0a9f54;
+        @media (max-width: 600px) {
+
+            .container {
+
+                width: 95%;
+
+            }
+
+            .endereco {
+
+                display: none;
+
+            }
+
+            .banner {
+
+                padding: 20px;
+
+            }
+
+            .banner-text {
+
+                width: 100%;
+
+            }
+
+            .banner-produtos {
+
+                display: none;
+
+            }
+
+            .lista {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .barra-superior {
+
+                display: block;
+
+            }
+
+            .cliente {
+
+                margin-top: 8px;
+
+            }
 
         }
-
 
     </style>
 
@@ -406,17 +489,17 @@
 
 <header>
 
+    <div class="logo">
+        Comercial Boa Compra
+    </div>
+
+    <div class="endereco">
+        São Gonçalo - RJ | Entregas e retirada
+    </div>
+
     <button class="menu">
         ☰
     </button>
-
-    <h1>
-        Burgão da Vila
-    </h1>
-
-    <p>
-        São Gonçalo - Área de Atendimento e Taxas
-    </p>
 
 </header>
 
@@ -428,84 +511,77 @@
 
     <div class="banner">
 
-        <!--
-            Imagem ilustrativa.
-            Troque por uma imagem própria se quiser.
-        -->
-
-        <img
-            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1400&q=80"
-            alt="Hambúrguer"
-        >
-
         <div class="banner-text">
 
-            <h2>
-                NOVO SITE
-            </h2>
+            <h1>
+                Ofertas da Semana
+            </h1>
 
             <p>
-                Peça agora!
+                Produtos para sua casa
+                com preços especiais.
             </p>
+
+            <button class="banner-button">
+                VER OFERTAS
+            </button>
+
+        </div>
+
+
+        <div class="banner-produtos">
+
+            🛒 🥫 🧃
 
         </div>
 
     </div>
 
 
-    <!-- CATEGORIAS -->
+    <!-- MENU -->
 
-    <div class="categorias">
+    <div class="menu-categorias">
 
-        <a href="#promocoes">
-            Promoções
+        <a href="#ofertas">
+            Ofertas
         </a>
 
-        <a href="#lanches">
-            Lanches
-        </a>
-
-        <a href="#combos">
-            Combo Individual
-        </a>
-
-        <a href="#combo-casal">
-            Combo Casal
-        </a>
-
-        <a href="#combo-familia">
-            Combo Família
-        </a>
-
-        <a href="#petiscos">
-            Petiscos
-        </a>
-
-        <a href="#batatas">
-            Batatas Fritas
-        </a>
-
-        <a href="#molhos">
-            Molhos Extras
+        <a href="#mercado">
+            Mercado
         </a>
 
         <a href="#bebidas">
             Bebidas
         </a>
 
+        <a href="#limpeza">
+            Limpeza
+        </a>
+
+        <a href="#higiene">
+            Higiene
+        </a>
+
+        <a href="#casa">
+            Casa
+        </a>
+
+        <a href="#outros">
+            Outros
+        </a>
+
     </div>
 
 
-    <!-- BUSCA E CARRINHO -->
+    <!-- BUSCA -->
 
-    <div class="busca-area">
+    <div class="barra-superior">
 
         <div class="busca">
 
             <input
                 type="text"
-                id="pesquisa"
-                placeholder="Busque por um produto"
+                placeholder="Digite o nome do produto"
             >
 
             <button>
@@ -515,63 +591,51 @@
         </div>
 
 
-        <div class="carrinho">
+        <div class="cliente">
 
-            <button class="botao-carrinho">
-
-                🛒 R$ 0,00
-
-            </button>
-
-            <button class="fechar-pedido">
-
-                Fechar Pedido
-
-            </button>
+            🛒 Carrinho: R$ 0,00
 
         </div>
 
     </div>
 
 
-    <!-- ==================================================
-         PROMOÇÕES
-    ================================================== -->
+    <!-- OFERTAS -->
 
     <div
-        class="titulo-categoria"
-        id="promocoes"
+        class="titulo"
+        id="ofertas"
     >
 
-        ▸ Promoções
+        Ofertas da Semana
 
     </div>
 
 
-    <div class="produtos">
+    <div class="lista">
 
 
         <div class="produto">
 
             <h3>
-                Combo Burgão + Refri
+                Cesta Básica Econômica
             </h3>
 
-            <p>
-                Hambúrguer, queijo, alface,
-                molho especial e batata.
-            </p>
-
             <div class="produto-imagem">
-                🍔
+                🛒
             </div>
 
+            <p>
+                Arroz, feijão, macarrão,
+                óleo e outros produtos.
+            </p>
+
             <span class="preco">
-                R$ 18,00 un
+                R$ 89,90
             </span>
 
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -580,24 +644,24 @@
         <div class="produto">
 
             <h3>
-                X-Bacon + Refri
+                Kit Limpeza
             </h3>
 
-            <p>
-                Carne, queijo, bacon,
-                alface e batata.
-            </p>
-
             <div class="produto-imagem">
-                🍔
+                🧹
             </div>
 
+            <p>
+                Produtos básicos para
+                limpeza da sua casa.
+            </p>
+
             <span class="preco">
-                R$ 21,00 un
+                R$ 39,90
             </span>
 
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -606,24 +670,24 @@
         <div class="produto">
 
             <h3>
-                X-Frango + Refri
+                Kit Café da Manhã
             </h3>
 
-            <p>
-                Frango, queijo, presunto,
-                bacon e batata.
-            </p>
-
             <div class="produto-imagem">
-                🍔
+                ☕
             </div>
 
+            <p>
+                Café, açúcar, leite e
+                biscoitos.
+            </p>
+
             <span class="preco">
-                R$ 20,00 un
+                R$ 29,90
             </span>
 
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -632,76 +696,24 @@
         <div class="produto">
 
             <h3>
-                X-Duplo Especial
+                Caixa de Bebidas
             </h3>
 
-            <p>
-                2 carnes, queijo, bacon,
-                ovo e batata palha.
-            </p>
-
             <div class="produto-imagem">
-                🍔
+                🥤
             </div>
 
-            <span class="preco">
-                R$ 25,00 un
-            </span>
-
-            <button>
-                Fora do Horário
-            </button>
-
-        </div>
-
-
-        <div class="produto">
-
-            <h3>
-                X-Picanha + Refri
-            </h3>
-
             <p>
-                Carne de picanha, queijo,
-                bacon, ovo e alface.
+                Seleção de bebidas
+                para toda a família.
             </p>
 
-            <div class="produto-imagem">
-                🍔
-            </div>
-
             <span class="preco">
-                R$ 28,00 un
+                R$ 42,90
             </span>
 
-            <button>
-                Fora do Horário
-            </button>
-
-        </div>
-
-
-        <div class="produto">
-
-            <h3>
-                X-Tudo da Casa
-            </h3>
-
-            <p>
-                Carne, queijo, presunto,
-                bacon, ovo e salada.
-            </p>
-
-            <div class="produto-imagem">
-                🍔
-            </div>
-
-            <span class="preco">
-                R$ 27,00 un
-            </span>
-
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -710,44 +722,42 @@
     </div>
 
 
-    <!-- ==================================================
-         LANCHES
-    ================================================== -->
+    <!-- MERCADO -->
 
     <div
-        class="titulo-categoria"
-        id="lanches"
+        class="titulo"
+        id="mercado"
     >
 
-        ▸ Lanches
+        Produtos de Mercado
 
     </div>
 
 
-    <div class="produtos">
+    <div class="lista">
 
 
         <div class="produto">
 
             <h3>
-                X-Burguer
+                Arroz Branco 5kg
             </h3>
 
-            <p>
-                Carne, queijo, alface
-                e molho especial.
-            </p>
-
             <div class="produto-imagem">
-                🍔
+                🍚
             </div>
 
+            <p>
+                Arroz branco para
+                o dia a dia.
+            </p>
+
             <span class="preco">
-                R$ 15,00 un
+                R$ 24,90
             </span>
 
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -756,24 +766,24 @@
         <div class="produto">
 
             <h3>
-                X-Bacon
+                Feijão 1kg
             </h3>
 
-            <p>
-                Carne, queijo, bacon,
-                alface e tomate.
-            </p>
-
             <div class="produto-imagem">
-                🍔
+                🫘
             </div>
 
+            <p>
+                Feijão carioca
+                tradicional.
+            </p>
+
             <span class="preco">
-                R$ 18,00 un
+                R$ 7,99
             </span>
 
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -782,24 +792,24 @@
         <div class="produto">
 
             <h3>
-                X-Frango
+                Óleo de Soja
             </h3>
 
-            <p>
-                Frango, queijo, presunto,
-                bacon e alface.
-            </p>
-
             <div class="produto-imagem">
-                🍔
+                🧴
             </div>
 
+            <p>
+                Óleo de soja
+                900ml.
+            </p>
+
             <span class="preco">
-                R$ 19,00 un
+                R$ 6,49
             </span>
 
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -808,76 +818,24 @@
         <div class="produto">
 
             <h3>
-                X-Picanha
+                Macarrão 500g
             </h3>
 
-            <p>
-                Picanha, queijo, bacon,
-                ovo e molho da casa.
-            </p>
-
             <div class="produto-imagem">
-                🍔
+                🍝
             </div>
 
-            <span class="preco">
-                R$ 23,00 un
-            </span>
-
-            <button>
-                Fora do Horário
-            </button>
-
-        </div>
-
-
-        <div class="produto">
-
-            <h3>
-                X-Duplo
-            </h3>
-
             <p>
-                2 carnes, queijo,
-                presunto e bacon.
+                Macarrão tradicional
+                500g.
             </p>
 
-            <div class="produto-imagem">
-                🍔
-            </div>
-
             <span class="preco">
-                R$ 22,00 un
+                R$ 4,99
             </span>
 
-            <button>
-                Fora do Horário
-            </button>
-
-        </div>
-
-
-        <div class="produto">
-
-            <h3>
-                X-Tudo
-            </h3>
-
-            <p>
-                Carne, queijo, presunto,
-                bacon, ovo e salada.
-            </p>
-
-            <div class="produto-imagem">
-                🍔
-            </div>
-
-            <span class="preco">
-                R$ 25,00 un
-            </span>
-
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -886,44 +844,42 @@
     </div>
 
 
-    <!-- ==================================================
-         COMBO INDIVIDUAL
-    ================================================== -->
+    <!-- BEBIDAS -->
 
     <div
-        class="titulo-categoria"
-        id="combos"
+        class="titulo"
+        id="bebidas"
     >
 
-        ▸ Combo Individual
+        Bebidas
 
     </div>
 
 
-    <div class="produtos">
+    <div class="lista">
 
 
         <div class="produto">
 
             <h3>
-                Combo X-Burguer
+                Refrigerante 2L
             </h3>
 
-            <p>
-                X-Burguer + batata
-                P + refrigerante.
-            </p>
-
             <div class="produto-imagem">
-                🍔🍟
+                🥤
             </div>
 
+            <p>
+                Refrigerante
+                2 litros.
+            </p>
+
             <span class="preco">
-                R$ 22,00 un
+                R$ 10,00
             </span>
 
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -932,24 +888,24 @@
         <div class="produto">
 
             <h3>
-                Combo X-Bacon
+                Suco de Frutas
             </h3>
 
-            <p>
-                X-Bacon + batata
-                P + refrigerante.
-            </p>
-
             <div class="produto-imagem">
-                🍔🍟
+                🧃
             </div>
 
+            <p>
+                Suco pronto
+                para beber.
+            </p>
+
             <span class="preco">
-                R$ 25,00 un
+                R$ 6,50
             </span>
 
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -958,24 +914,24 @@
         <div class="produto">
 
             <h3>
-                Combo X-Duplo
+                Água Mineral
             </h3>
 
-            <p>
-                X-Duplo + batata
-                P + refrigerante.
-            </p>
-
             <div class="produto-imagem">
-                🍔🍟
+                💧
             </div>
 
+            <p>
+                Garrafa de água
+                mineral 500ml.
+            </p>
+
             <span class="preco">
-                R$ 29,00 un
+                R$ 3,00
             </span>
 
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -984,76 +940,24 @@
         <div class="produto">
 
             <h3>
-                Combo X-Frango
+                Café Tradicional
             </h3>
 
-            <p>
-                X-Frango + batata
-                P + refrigerante.
-            </p>
-
             <div class="produto-imagem">
-                🍔🍟
+                ☕
             </div>
 
-            <span class="preco">
-                R$ 26,00 un
-            </span>
-
-            <button>
-                Fora do Horário
-            </button>
-
-        </div>
-
-
-        <div class="produto">
-
-            <h3>
-                Combo X-Picanha
-            </h3>
-
             <p>
-                X-Picanha + batata
-                P + refrigerante.
+                Café torrado e
+                moído 500g.
             </p>
 
-            <div class="produto-imagem">
-                🍔🍟
-            </div>
-
             <span class="preco">
-                R$ 32,00 un
+                R$ 16,90
             </span>
 
-            <button>
-                Fora do Horário
-            </button>
-
-        </div>
-
-
-        <div class="produto">
-
-            <h3>
-                Combo X-Tudo
-            </h3>
-
-            <p>
-                X-Tudo + batata
-                P + refrigerante.
-            </p>
-
-            <div class="produto-imagem">
-                🍔🍟
-            </div>
-
-            <span class="preco">
-                R$ 34,00 un
-            </span>
-
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -1062,44 +966,42 @@
     </div>
 
 
-    <!-- ==================================================
-         COMBO CASAL
-    ================================================== -->
+    <!-- LIMPEZA -->
 
     <div
-        class="titulo-categoria"
-        id="combo-casal"
+        class="titulo"
+        id="limpeza"
     >
 
-        ▸ Combo Casal
+        Produtos de Limpeza
 
     </div>
 
 
-    <div class="produtos">
+    <div class="lista">
 
 
         <div class="produto">
 
             <h3>
-                Combo Casal X-Burguer
+                Detergente
             </h3>
 
-            <p>
-                2 X-Burguer + batata
-                grande + refrigerante 2L.
-            </p>
-
             <div class="produto-imagem">
-                🍔🍔
+                🧴
             </div>
 
+            <p>
+                Detergente líquido
+                para louças.
+            </p>
+
             <span class="preco">
-                R$ 48,00 un
+                R$ 2,99
             </span>
 
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -1108,24 +1010,24 @@
         <div class="produto">
 
             <h3>
-                Combo Casal X-Bacon
+                Sabão em Pó
             </h3>
 
-            <p>
-                2 X-Bacon + batata
-                grande + refrigerante 2L.
-            </p>
-
             <div class="produto-imagem">
-                🍔🍔
+                🧼
             </div>
 
+            <p>
+                Sabão em pó
+                para roupas.
+            </p>
+
             <span class="preco">
-                R$ 55,00 un
+                R$ 9,90
             </span>
 
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -1134,70 +1036,24 @@
         <div class="produto">
 
             <h3>
-                Combo Casal X-Duplo
+                Desinfetante
             </h3>
 
-            <p>
-                2 X-Duplos + batata
-                grande + refrigerante 2L.
-            </p>
-
             <div class="produto-imagem">
-                🍔🍔
+                🧴
             </div>
 
-            <span class="preco">
-                R$ 62,00 un
-            </span>
-
-            <button>
-                Fora do Horário
-            </button>
-
-        </div>
-
-
-    </div>
-
-
-    <!-- ==================================================
-         COMBO FAMÍLIA
-    ================================================== -->
-
-    <div
-        class="titulo-categoria"
-        id="combo-familia"
-    >
-
-        ▸ Combo Família
-
-    </div>
-
-
-    <div class="produtos">
-
-
-        <div class="produto">
-
-            <h3>
-                Família 4 Lanches
-            </h3>
-
             <p>
-                4 lanches + batata
-                grande + refrigerante 2L.
+                Desinfetante
+                perfumado.
             </p>
 
-            <div class="produto-imagem">
-                🍔🍔
-            </div>
-
             <span class="preco">
-                R$ 85,00 un
+                R$ 5,99
             </span>
 
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -1206,50 +1062,24 @@
         <div class="produto">
 
             <h3>
-                Família 5 Lanches
+                Esponja
             </h3>
 
-            <p>
-                5 lanches + batata
-                grande + refrigerante 2L.
-            </p>
-
             <div class="produto-imagem">
-                🍔🍔
+                🧽
             </div>
 
-            <span class="preco">
-                R$ 105,00 un
-            </span>
-
-            <button>
-                Fora do Horário
-            </button>
-
-        </div>
-
-
-        <div class="produto">
-
-            <h3>
-                Família 6 Lanches
-            </h3>
-
             <p>
-                6 lanches + batata
-                grande + refrigerante 2L.
+                Esponja para
+                limpeza.
             </p>
 
-            <div class="produto-imagem">
-                🍔🍔
-            </div>
-
             <span class="preco">
-                R$ 125,00 un
+                R$ 3,50
             </span>
 
-            <button>
-                Fora do Horário
+            <button class="comprar">
+                Comprar
             </button>
 
         </div>
@@ -1258,27 +1088,50 @@
     </div>
 
 
-    <!-- ESPAÇO PARA O CARRINHO -->
+    <!-- AVISO -->
+
+    <div class="aviso">
+
+        <strong>
+            Informações:
+        </strong>
+
+        Pedidos estão sujeitos à disponibilidade
+        dos produtos. Consulte as condições
+        de entrega diretamente com a loja.
+
+    </div>
+
 
     <br>
     <br>
-    <br>
-    <br>
+
 
 </div>
 
 
-<!-- CARRINHO FIXO -->
+<!-- RODAPÉ -->
 
-<div class="carrinho-fixo">
+<footer>
 
-    <button class="valor">
-        🛒 R$ 0,00
-    </button>
+    Comercial Boa Compra
 
-    <button class="finalizar">
-        Fechar Pedido
-    </button>
+    <br><br>
+
+    Rua Exemplo, 100 - São Gonçalo - RJ
+
+    <br>
+
+    Telefone: (21) 0000-0000
+
+</footer>
+
+
+<!-- CARRINHO -->
+
+<div class="carrinho">
+
+    🛒 Carrinho: R$ 0,00
 
 </div>
 
